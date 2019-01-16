@@ -1,0 +1,133 @@
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-rss {
+    background: #ff6600;
+    color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.bg-red {
+    background-color: red;
+}
+
+div{
+    border: 2px solid blue;
+}
+
+body{
+   /*background-image: url("static/images/bg.jpg");*/
+   text-align: center;
+   border: 2px solid black;
+   position: absolute;
+   width: 100vw;
+
+}
+
+.hero{
+   position: relative;
+}
+.container{
+    margin:0 auto;
+}
+
+header{
+   width:82%;
+   display: inline-table;
+   margin:0 auto;
+
+}
+
+.btn-primary {
+   color: #fff;
+   background-color: #9e2150;
+   border-color: #9e2150;
+   margin-bottom: 10px;
+   margin-top:10px;
+}
+
+.jumbotron-fluid{
+   /*background-image: url("top-image.png");*/
+   padding: 4rem 2rem;
+   max-width: 82%;
+   position: relative;
+   margin: 0 auto;
+   border: 2px solid black;
+
+}
+
+.skull-container {
+   width: 25%;
+   height:75%;
+   margin-left:5%;
+   position:relative;
+   z-index: 2;
+}
+
+.background-pic{
+   position:relative;
+   z-index: 1;
+   text-align: center;
+}
+
+.three-boxes{
+   /*border: 2px solid black;*/
+   position: relative;
+   width: 68%;
+   text-align: center;
+   margin-left:16%;
+
+}
+
+.three{
+
+   text-align: center;
+
+   padding:0;
+}
+
+.inside{
+   padding:5px;
+   width:90%;
+   text-align: center;
+   margin:0 auto;
+   border:2px solid black;
+   margin-top: 10px;
+}
+
+p{
+   font-size: 15px;
+}
+
+.head-3{
+   font-size: 20px;
+}
+
+.date{
+   color:lightgray;
+   font-size: 15px;
+}
