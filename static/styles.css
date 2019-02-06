@@ -49,7 +49,7 @@
     /*position: relative;*/
     /*z-index: 2;*/
 /*}*/
-.skull-container::after {
+.jumbotron-fluid::after {
   content: "";
 
   top: 0;
