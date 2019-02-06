@@ -1,16 +1,16 @@
 /*body{*/
-    /*!*background-image: url("static/images/bg.jpg");*!*/
+    /*background: url("./images/bg.jpg") no repeat top/cover;*/
     /*text-align: center;*/
-    /*border: 2px solid black;*/
-    /*position: absolute;*/
+    /*!*border: 2px solid black;*!*/
+    /*position: relative;*/
     /*width: 100vw;*/
-
+    /*height: 100vh;*/
 /*}*/
 
 /*.hero{*/
     /*position: relative;*/
 /*}*/
- /*.container{*/
+/*.container{*/
      /*!*margin:0 auto;*!*/
      /*margin-top: 30px;*/
 
@@ -32,22 +32,38 @@
 /*}*/
 
 /*.jumbotron-fluid{*/
-    /*!*background-image: url("top-image.png");*!*/
+    /*background: url("./images/top-image.png") no-repeat top/cover;*/
     /*padding: 4rem 2rem;*/
     /*max-width: 82%;*/
     /*position: relative;*/
     /*margin: 0 auto;*/
     /*border: 2px solid black;*/
 
+
 /*}*/
 
 /*.skull-container {*/
     /*width: 25%;*/
-    /*height:75%;*/
-    /*margin-left:5%;*/
-    /*position:relative;*/
+    /*height: 75%;*/
+    /*margin-left: 5%;*/
+    /*position: relative;*/
     /*z-index: 2;*/
 /*}*/
+.jumbotron-fluid::after {
+  content: "";
+
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  position: absolute;
+
+  background: url("./images/grid.png") no-repeat center/cover;
+
+  opacity: .4;
+}
+
 
 /*.background-pic{*/
     /*position:relative;*/
@@ -68,7 +84,6 @@
 /*.three{*/
 
     /*text-align: center;*/
-
     /*padding:0;*/
 /*}*/
 
@@ -79,6 +94,8 @@
     /*margin:0 auto;*/
     /*border:2px solid black;*/
     /*margin-top: 10px;*/
+    /*background-color: white;*/
+
 /*}*/
 
 /*p{*/
@@ -94,15 +111,15 @@
     /*font-size: 15px;*/
 /*}*/
 
-/*.boards {*/
-    /*padding: 10px;*/
-/*}*/
+.boards {
+}
 
-/*.decks{*/
-    /*background-color: white;*/
-    /*margin-top: 30px;*/
+.decks{
+    background-color: white;
+    margin-top: 30px;
+    padding: 25px;
 
-/*}*/
+}
 
 /*.left{*/
     /*width: 40%;*/
@@ -133,52 +150,74 @@
     /*margin: 5 px;*/
 /*}*/
 
-/*.small{*/
-    /*height: 50%;*/
-    /*background-color: aqua;*/
-    /*!*margin:3px;*!*/
-    /*!*padding:0;*!*/
-/*}*/
+/*!*.small{*!*/
+    /*!*height: 50%;*!*/
+    /*!*background-color: aqua;*!*/
+    /*!*!*margin:3px;*!*!*/
+    /*!*!*padding:0;*!*!*/
+/*!*}*!*/
 
-/*.tall {*/
-    /*float: right;*/
-    /*background-color: yellow;*/
-    /*!*margin: 3px;*!*/
-    /*height: 400px;*/
-    /*display: -webkit-inline-box;*/
-    /*!*padding:0;*!*/
-/*}*/
+/*!*.tall {*!*/
+    /*!*float: right;*!*/
+    /*!*background-color: yellow;*!*/
+    /*!*!*margin: 3px;*!*!*/
+    /*!*height: 400px;*!*/
+    /*!*display: -webkit-inline-box;*!*/
+    /*!*!*padding:0;*!*!*/
+/*!*}*!*/
 
-/*.long {*/
-    /*float: left;*/
-    /*!* clear: both; *!*/
-    /*background-color: greenyellow;*/
-    /*!* position: relative; *!*/
-    /*top: 0;*/
-    /*!* left: 0; *!*/
-    /*!*margin-left:20px;*!*/
-    /*!*padding:0;*!*/
-/*}*/
+/*!*.long {*!*/
+    /*!*float: left;*!*/
+    /*!*!* clear: both; *!*!*/
+    /*!*background-color: greenyellow;*!*/
+    /*!*!* position: relative; *!*!*/
+    /*!*top: 0;*!*/
+    /*!*!* left: 0; *!*!*/
+    /*!*!*margin-left:20px;*!*!*/
+    /*!*!*padding:0;*!*!*/
+/*!*}*!*/
 
-/*.lance{*/
-    /*height:200px;*/
-    /*margin:0 auto;*/
-/*}*/
+/*!*.lance{*!*/
+    /*!*height:200px;*!*/
+    /*!*margin:0 auto;*!*/
+/*!*}*!*/
 
-/*.randy{*/
-    /*height: 200px;*/
-    /*margin: 0 auto;*/
-/*}*/
-
-/*.tommy{*/
-    /*height:400px;*/
-    /*margin:0 auto;*/
-/*}*/
-/*.steve{*/
-    /*height: 200px;*/
+/*!*.randy{*!*/
+    /*!*height: 200px;*!*/
     /*!*margin: 0 auto;*!*/
+/*!*}*!*/
+
+/*!*.tommy{*!*/
+    /*!*height:400px;*!*/
+    /*!*margin:0 auto;*!*/
+/*!*}*!*/
+/*!*.steve{*!*/
+    /*!*height: 200px;*!*/
+    /*!*!*margin: 0 auto;*!*!*/
+/*!*}*!*/
+
+/*.container-fluid{*/
+    /*background:url("./images/bg.jpg") no-repeat top/cover;*/
+    /*z-index: -20;*/
+
 /*}*/
 
+/*.container-fluid::after{*/
+    /*content: "";*/
+    /*top:0;*/
+    /*bottom:0;*/
+    /*right:0;*/
+    /*left:0;*/
+    /*position: absolute;*/
+    /*background-color: lavenderblush;*/
+    /*opacity: .5;*/
+    /*z-index: -10;*/
+
+/*}*/
+
+/*.contact{*/
+    /*background-color: white;*/
+/*}*/
 body{
     background: url("./images/bg.jpg") no repeat top/cover;
     text-align: center;
@@ -220,7 +259,6 @@ header{
     margin: 0 auto;
     border: 2px solid black;
 
-
 }
 
 .skull-container {
@@ -238,7 +276,7 @@ header{
 }
 
 .three-boxes{
-    /*border: 2px solid black;*/
+
     position: relative;
     width: 68%;
     text-align: center;
@@ -277,15 +315,17 @@ p{
     font-size: 15px;
 }
 
-.boards {
-}
 
-.decks{
-    background-color: white;
-    margin-top: 30px;
-    padding: 25px;
+/*.decks{*/
+    /*background-color: white;*/
+    /*margin-top: 30px;*/
+    /*padding: 25px;*/
 
-}
+/*}*/
+
+/*.boards{*/
+    /*margin:3px;*/
+/*}*/
 
 .left{
     width: 40%;
@@ -306,61 +346,12 @@ p{
 
 
 
-div{
-    display: inline-block;
-}
-
-
 .input{
     padding-top:10px;
     margin: 5 px;
 }
 
-/*.small{*/
-    /*height: 50%;*/
-    /*background-color: aqua;*/
-    /*!*margin:3px;*!*/
-    /*!*padding:0;*!*/
-/*}*/
 
-/*.tall {*/
-    /*float: right;*/
-    /*background-color: yellow;*/
-    /*!*margin: 3px;*!*/
-    /*height: 400px;*/
-    /*display: -webkit-inline-box;*/
-    /*!*padding:0;*!*/
-/*}*/
-
-/*.long {*/
-    /*float: left;*/
-    /*!* clear: both; *!*/
-    /*background-color: greenyellow;*/
-    /*!* position: relative; *!*/
-    /*top: 0;*/
-    /*!* left: 0; *!*/
-    /*!*margin-left:20px;*!*/
-    /*!*padding:0;*!*/
-/*}*/
-
-.lance{
-    height:200px;
-    margin:0 auto;
-}
-
-.randy{
-    height: 200px;
-    margin: 0 auto;
-}
-
-.tommy{
-    height:400px;
-    margin:0 auto;
-}
-.steve{
-    height: 200px;
-    /*margin: 0 auto;*/
-}
 
 .container-fluid{
     background:url("./images/bg.jpg") no-repeat top/cover;
@@ -383,4 +374,38 @@ div{
 
 .contact{
     background-color: white;
+}
+
+#cont-left{
+    display: inline-block;
+}
+
+#cont-right{
+    display: inline-block;
+}
+
+.name{
+    position: relative;
+    z-index: 10;
+    display: inline-block;
+}
+
+.skater{
+    position:relative;
+    z-index: 1;
+}
+
+
+
+
+.col-md-4{
+    margin-top: 7%;
+}
+
+.col-md-6{
+    margin-top: 7%;
+}
+
+.contact-us{
+    margin-top: 20px;
 }
